@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "sinceSnapshot": null,
+  "ops": [
+    {
+      "id": "op_init_catalog",
+      "ts": "2026-08-25T06:30:36.078Z",
+      "provider": "unity",
+      "op": "unity.add_catalog",
+      "target": "cat_default_cat",
+      "payload": {
+        "catalogId": "cat_default_cat",
+        "name": "default_cat"
+      }
+    }
+  ],
+  "lastModified": "2026-08-25T06:30:36.089Z"
+}

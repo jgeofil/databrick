@@ -1,0 +1,54 @@
+{
+  "version": 5,
+  "name": "databricks",
+  "targets": {
+    "default": {
+      "type": "unity",
+      "version": "1.0.0",
+      "environments": {
+        "dev": {
+          "topLevelName": "dev_databricks",
+          "description": "Development environment",
+          "allowDrift": true,
+          "requireSnapshot": false,
+          "autoCreateTopLevel": true,
+          "autoCreateSchemaxSchema": true,
+          "catalogMappings": {
+            "default_cat": "dev_databricks"
+          }
+        },
+        "test": {
+          "topLevelName": "test_databricks",
+          "description": "Test/staging environment",
+          "allowDrift": false,
+          "requireSnapshot": true,
+          "autoCreateTopLevel": true,
+          "autoCreateSchemaxSchema": true,
+          "catalogMappings": {
+            "default_cat": "test_databricks"
+          }
+        },
+        "prod": {
+          "topLevelName": "prod_databricks",
+          "description": "Production environment",
+          "allowDrift": false,
+          "requireSnapshot": true,
+          "requireApproval": false,
+          "autoCreateTopLevel": false,
+          "autoCreateSchemaxSchema": true,
+          "catalogMappings": {
+            "default_cat": "prod_databricks"
+          }
+        }
+      }
+    }
+  },
+  "defaultTarget": "default",
+  "snapshots": [],
+  "deployments": [],
+  "settings": {
+    "autoIncrementVersion": true,
+    "versionPrefix": "v"
+  },
+  "latestSnapshot": null
+}
